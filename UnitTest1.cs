@@ -9,7 +9,9 @@ namespace NUnitTestProject
     public class Tests
     {
         IWebDriver driver;
-        public string userName = "";
+        public string UserName;
+        public string Password = "JohnyBlack123***";
+
 
         [SetUp]
         public void Setup()
@@ -18,6 +20,7 @@ namespace NUnitTestProject
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             driver.Navigate().GoToUrl("https://newbookmodels.com/");
             driver.Manage().Window.Maximize();
+            GenerateEmail();
         }
 
         [Test]
@@ -39,10 +42,10 @@ namespace NUnitTestProject
             emailField.SendKeys(userName);
             IWebElement passwordsField = driver.FindElement(By.CssSelector("[name=\"password\"]"));
             passwordsField.Click();
-            passwordsField.SendKeys("JohnyBlack123***");
+            passwordsField.SendKeys(Password);
             IWebElement confirmPasswordField = driver.FindElement(By.CssSelector("[name=\"password_confirm\"]"));
             confirmPasswordField.Click();
-            confirmPasswordField.SendKeys("JohnyBlack123***");
+            confirmPasswordField.SendKeys(Password);
             IWebElement mobileField = driver.FindElement(By.CssSelector("[name=\"phone_number\"]"));
             mobileField.Click();
             mobileField.SendKeys("06666666666");
@@ -71,9 +74,18 @@ namespace NUnitTestProject
         [Test]
         public void AutorizationTest()
         {
+            
             IWebElement logInButton = driver.FindElement(By.CssSelector("[class *=\"Navbar__navLink--3lL7S Navbar__navLinkSingle--3x6Lx Navbar__login--28b35\"]"));
             logInButton.Click();
-            IWebElement emailField = driver.FindElement(By.CssSelector("[]"));
+            IWebElement emailField = driver.FindElement(By.CssSelector("[class *=\"Input__input--_88SI Input__themeNewbook--1IRjd Input__fontRegular--2SStp\"]"));
+            emailField.Click();
+            GenerateEmail();
+            emailField.SendKeys(GenerateEmail());
+            IWebElement passwordField = driver.FindElement(By.CssSelector("[name=\"password\"]"));
+            passwordField.Click();
+            passwordField.SendKeys(Password);
+            IWebElement logInButtonInAutorisation = driver.FindElement(By.CssSelector("[type= \"submit\"]"));
+            logInButtonInAutorisation.Click();
         }
 
         [TearDown]
@@ -90,7 +102,7 @@ namespace NUnitTestProject
             userName = userName.Replace(".", "");
             userName = userName.Replace(" ", "");
             userName = userName.Replace(":", "");
-            userName = "JohnyBlack" + userName + "@supermode5.ua";
+            userName = "JohnyBlack" + userName + "@supermodel.ua";
             return userName;
         }
     }

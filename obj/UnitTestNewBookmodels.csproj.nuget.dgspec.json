@@ -1,25 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tafar\\OneDrive\\Рабочий стол\\UnitTestNewBookmodels\\UnitTestNewBookmodels.csproj": {}
+    "C:\\Users\\dev\\Desktop\\black\\UnitTestNewBookModel\\UnitTestNewBookmodels.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tafar\\OneDrive\\Рабочий стол\\UnitTestNewBookmodels\\UnitTestNewBookmodels.csproj": {
+    "C:\\Users\\dev\\Desktop\\black\\UnitTestNewBookModel\\UnitTestNewBookmodels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tafar\\OneDrive\\Рабочий стол\\UnitTestNewBookmodels\\UnitTestNewBookmodels.csproj",
+        "projectUniqueName": "C:\\Users\\dev\\Desktop\\black\\UnitTestNewBookModel\\UnitTestNewBookmodels.csproj",
         "projectName": "UnitTestNewBookmodels",
-        "projectPath": "C:\\Users\\tafar\\OneDrive\\Рабочий стол\\UnitTestNewBookmodels\\UnitTestNewBookmodels.csproj",
-        "packagesPath": "C:\\Users\\tafar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tafar\\OneDrive\\Рабочий стол\\UnitTestNewBookmodels\\obj\\",
+        "projectPath": "C:\\Users\\dev\\Desktop\\black\\UnitTestNewBookModel\\UnitTestNewBookmodels.csproj",
+        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dev\\Desktop\\black\\UnitTestNewBookModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\tafar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
