@@ -97,7 +97,7 @@ namespace NUnitTestProject
         public string GenerateEmail()
         {
             DateTime dateTime = new DateTime();
-            dateTime = DateTime.Now;
+            dateTime = DateTime.Today;
             string userName = dateTime.ToString();
             userName = userName.Replace(".", "");
             userName = userName.Replace(" ", "");
